@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Generator rzutu kośćmi - OnLine</title>
-		<meta name="description" content="Generator rzutu kośćmi Alea On-Line - ustaw swoje kości do gry!"/>
-		<meta name="keywords" content="Generator rzutu kośćmi, Symulator rzutu kośćmi, Rzut kostką, Rzut kością online, Kości do gry, Kostka do gry, Gry RPG"/>
+		<title>Diceroller - OnLine</title>
+		<meta name="description" content="Diceroller RPG OnLine - set your dices"/>
+		<meta name="keywords" content="diceroller, dice simulator, rpg dice, diceroller online, dice throw, rpg games"/>
         <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" />
 		<link rel="Shortcut icon" href="icon.gif" />
         
@@ -56,8 +56,8 @@
 
 	<body>
         <header>            
-            <a href="http://www.alea.cba.pl"><h1>Generator rzutu kośćmi</h1></a>
-            <p><a href="http://www.alea.cba.pl">Alea.cba.pl</a></p>
+            <a href="http://www.diceroller-rpg.com/eng/"><h1>Diceroller</h1></a>
+            <p><a href="http://www.diceroller-rpg.com/eng/">Diceroller-rpg.com</a></p>
             <nav>
                 <ul>
                     <?php include('menu.php'); ?>
@@ -67,8 +67,8 @@
         <section id="spacer">   
             <div class="search">
                 <form method='post' action='select.php'>
-                    <input type="text" name="idrzutu" value="Podaj numer rzutu" onclick="clearField(this)"/>
-                    <input type="submit" name="start_search" value="Sprawdź wynik"/>
+                    <input type="text" name="idrzutu" value="Dice throw number" onclick="clearField(this)"/>
+                    <input type="submit" name="start_search" value="Check result"/>
                 </form>
             </div>            
         </section>
@@ -79,27 +79,27 @@
 	<table>
 		<form method='post' action='kostka.php'>
 			<tr>
-				<td>Ile rzutów</td>
+				<td>How many throws</td>
 				<td><input type="text" name="rzuty" size="2" value="1"/></td>
 			</tr>
 			<tr>
-				<td>Ile kości</td>
+				<td>How many dices</td>
 				<td><input type="text" name="mnoznik" size="2" value="1"/></td>
 			</tr>
 			<tr>
-				<td>Typ kości (k)</td>
+				<td>Dice type (d)</td>
 				<td><input type="text" name="oczka" size="2" value="6"/></td>
 			</tr>
 			<tr>
-				<td>Modyfikator dla rzutu</td>
+				<td>Throw modificator</td>
 				<td><input type="text" name="plus" size="2" value="0"/></td>
 			</tr>
             <tr>
-                <td>Komentarz</td>
+                <td>Comment</td>
                 <td><textarea name="komentarz" rows="4" cols="35" maxlength="150"></textarea></td>
             </tr>
 			<tr>
-				<td><input type='submit' value='Rzucaj'></td>
+				<td><input type='submit' value='Go'></td>
 				<td></td>
 			</tr>
 		</form>
@@ -131,12 +131,12 @@
             <section id="copyright">
             	<h3 class="hidden">Copyright notice</h3>
                 <div class="wrapper">
-                    &copy; Copyright 2015 by <a href="http://www.alea.cba.pl">Alea.cba.pl</a>
+                    &copy; Copyright 2015 by <a href="http://www.diceroller-rpg.com">diceroller-rpg.com</a>
                 </div>
             </section>
             <section class="wrapper">
                 <article class="column leftlist">
-                    <h4>Polecane strony</h4>
+                    <h4>Recommended sites</h4>
                     <ul>
 						<li><a target="_blank" href="http://www.ceneo.pl/Gry_towarzyskie;017Planszowe_P11-46116.htm">Gry planszowe i RPG</a></li>
 						<li><a target="_blank" href="http://www.ceneo.pl/Gry;szukaj-kości">Kości do gry</a></li>
@@ -144,7 +144,7 @@
                     </ul>
                 </article>
                 <article class="column middletlist">
-                    <h4>Fora RPG</h4>
+                    <h4>RPG forums</h4>
                     <ul>
 						<li><a target="_blank" href="http://www.lastinn.info">Lastinn.pl</a></li>
 						<li><a target="_blank" href="http://www.erpg.pl">Erpg.pl</a></li>
