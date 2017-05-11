@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+
+
+.once {
+   
+    -webkit-animation-duration: 400ms;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: cubic-bezier(0.1,0,0,1.5);
+  
+    -moz-animation-duration: 400ms;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: cubic-bezier(0.1,0,0,1.5);
+   
+    -ms-animation-duration: 400ms;
+    -ms-animation-iteration-count: 1;
+    -ms-animation-timing-function: cubic-bezier(0.1,0,0,1.5);
+    
+    
+    animation-duration: 400ms;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.1,0,0,1.5);
+}
+
+.roll{
+
+
+ -webkit-animation-name: roll;
+  -moz-animation-name: roll;
+ -ms-animation-name: roll;
+animation-name: roll;
+}
+
+.pop{
+
+
+ -webkit-animation-name: pop;
+  -moz-animation-name: pop;
+ -ms-animation-name: pop;
+animation-name: pop;
+}
+
+
+body{
+
+background-color:gray;
+}
+
+
+.diceButton{
+
+font-family:Arial;
+font-weight:bold;
+font-size:14px;
+width:40px;
+height:40px;
+background-color:red;
+border:3px solid black;
+border-radius:6px;
+
+color:white;
+padding:6px;
+margin:10px;
+box-shadow:2px 2px 2px 2px rgba(0,0,0,1);
+}
+
+.results{
+font-family:Arial;
+font-weight:bold;
+font-size:10px;
+width:60%;
+word-wrap:normal;
+border:1px transparent;
+border-radius:6px;
+background-color:rgba(100,100,100,0.8);
+border:1px;
+border-radius:6px;
+padding:10px;
+margin:10px;
+
+}
+
+
+.row{
+display:flex;
+flex-direction:row;
+
+justify-content:flex-start;
+align-items:center;
+width:100%;
+
+}
+
+
+
+
+@-ms-keyframes pop{
+    0%,100% { -ms-transform:none; }
+    30% { -ms-transform:scale(1.03);color:white;}
+}
+@-moz-keyframes pop {
+    0%,100% { -moz-transform:none; }
+    30% { -moz-transform:scale(1.03);color:white;;}
+}
+@-webkit-keyframes pop {
+    0%,100% { -webkit-transform:none; }
+    30% { -webkit-transform:scale(1.03);color:white;}
+}
+@keyframes pop {
+    0%,100% {transform:none;}
+    30% {transform:scale(1.03);color:white;}
+}
+
+
+
+
+
+
+@-ms-keyframes roll{
+    0%,100% { -ms-transform:none; }
+    30% { -ms-transform:translateX(2em) rotate(360deg);}
+}
+@-moz-keyframes roll {
+    0%,100% { -moz-transform:none; }
+    30% { -moz-transform:translateX(2em) rotate(360deg);}
+}
+@-webkit-keyframes roll {
+    0%,100% { -webkit-transform:none; }
+    30% { -webkit-transform:translateX(2em) rotate(360deg);}
+}
+@keyframes roll {
+    0%,100% {transform:none;}
+    30% {transform:translateX(2em) rotate(360deg);}
+}
