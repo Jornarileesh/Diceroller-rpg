@@ -1,0 +1,203 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Civilisation theory</title>
+	<link rel="stylesheet" href="styles/style.css" type="text/css" />
+	<script type="text/javascript" src="js/engine.js"></script>
+	<script>
+		function techtree() {
+			var myWindow = window.open
+			("http://localhost/CivilisationTheory/techtree.html", "", "width=300, height=500");
+			};
+	</script>
+</head>
+<body  onload="drewno_start()">
+
+	<table class="materials">
+		<tr>
+			<td>
+				<img src="icons/wood_ico.png" title="drewno">
+			</td>
+			<td class="materials">
+				<p id='licznik_drewno'>0</p>
+			</td>
+			<td>
+				<img src="icons/stone_ico.png" title="kamień">
+			</td>
+			<td class="materials">
+				<p id='licznik_kamien'>0</p>
+			</td>
+			<td>
+				<img src="icons/iron_ico.png" title="żelazo">
+			</td>
+			<td class="materials">
+				<p id='licznik_3'>0</p>
+			</td>
+			<td>
+				<img src="icons/gold_ico.png" title="złoto">
+			</td>
+			<td class="materials">
+				<p id='licznik_4'>0</p>
+			</td>
+			<td>
+				<img src="icons/map_ico.png" title="powierzchnia państwa">
+			</td>
+			<td class="materials">
+				<p id='licznik_5'>1</p>
+			</td>
+			<td>
+				Poziom cywilizacji:
+			</td>
+			<td class="materials">
+				<p id='licznik_6'>Epoka kamienia</p>
+			</td>
+  		</tr>
+  	</table>
+
+  	<table class="parameters">
+		<tr>
+			<td>
+				<img src="icons/wood_ico.png" title="drewno">
+			</td>
+			<td class="parameters">
+				<p id='drewno_speed'>0</p>
+			</td>
+			<td>
+				<img src="icons/stone_ico.png" title="kamień">
+			</td>
+			<td class="parameters">
+				<p id='kamien_speed'>0</p>
+			</td>
+			<td>
+				<img src="icons/iron_ico.png" title="żelazo">
+			</td>
+			<td class="parameters">
+				<p id='licznik_3'>0</p>
+			</td>
+			<td>
+				<img src="icons/gold_ico.png" title="złoto">
+			</td>
+			<td class="parameters">
+				<p id='licznik_4'>0</p>
+			</td>
+  		</tr>
+  	</table>
+
+  	<table class="buttons">
+		<tr>
+			<td>
+				<button type="button" onclick="stop()">Save</button> | 
+			</td>
+			<td>
+				<a href="" onclick="techtree()">Tech Tree</a> | 
+			</td>
+			<td>
+				<a href="index.html">Logout</a>
+			</td>
+		</tr>
+	</table>
+
+	<p class="obejects_title"><b>Budowle cywilne:</b></p>
+	<table class="objects">
+		<tr>
+			<td class="objects">
+				<img src="icons/sawmill_ico.png" title="tartak">Tartak:
+			</td>
+			<td class="objects">
+				<span id='drewno_tartak'>1</span>
+			</td>
+			<td class="objects">
+				<input type="number" size="1" min="0" max="99"/>
+				<button type="button" onclick="drewno_tartak_buy()">+</button>
+			</td>
+		</tr>
+		<tr>
+			<td class="objects">
+				<img src="icons/quarry_ico.png" title="kamieniołom">Kamieniołom:
+			</td>
+			<td class="objects">
+				<span id='kamien_kamieniolom'>0</span>
+			</td>
+			<td class="objects">
+				<input type="number" size="1" min="0" max="99"/>
+				<button type="button" onclick="kamien_kamieniolom_buy()">+</button>
+			</td>
+		</tr>
+		<tr>
+			<td class="objects">
+				<img src="icons/ironmine_ico.png" title="kopalnia żelaza">Kopalnia żelaza:
+			</td>
+			<td class="objects">
+				0
+			</td>
+			<td class="objects">
+				<input type="number" size="1" min="0" max="99"/>
+				<button type="button" onclick="">+</button>
+			</td>
+		</tr>
+		<tr>
+			<td class="objects">
+				<img src="icons/goldmine_ico.png" title="kopalnia złota">Kopalnia złota:
+			</td>
+			<td class="objects">
+				0
+			</td>
+			<td class="objects">
+				<input type="number" size="1" min="0" max="99"/>
+				<button type="button" onclick="">+</button>
+			</td>
+		</tr>
+	</table>
+	
+	<p class="inventions_title"><b>Badania cywilne:</b></p>
+	<table class="inventions">
+		<tr>
+			<td>
+				Produkcja drewna | Koszt: <span id='tartak_drewno_koszt'>10</span> drewna | 
+				<span id='tartak_kamien_koszt'>0</span> kamienia | 
+			</td>
+			<td>
+				Poziom: <span id='drewno_poziom'>0</span>
+			</td>
+			<td>
+				<button type="button" onclick="drewno_bust()">Badaj</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Produkcja kamienia | Koszt: <span id='kamieniolom_drewno_koszt'>50</span> drewna | 
+				<span id='kamieniolom_kamien_koszt'>0</span> kamienia | 
+			</td>
+			<td>
+				Poziom: <span id='kamien_poziom'>0</span>
+			</td>
+			<td>
+				<button type="button" onclick="kamien_bust()">Badaj</button>
+			</td>
+		</tr>
+		<tr>	
+			<td>
+				Produkcja żelaza | Koszt: 50 kamienia | 
+			</td>
+			<td>
+				Poziom: <span>0</span>
+			</td>
+			<td>
+				<button type="button" onclick="">Badaj</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Produkcja złota | Koszt: 100 żelaza | 
+			</td>
+			<td>
+				Poziom: <span>0</span>
+			</td>
+			<td>
+				<button type="button" onclick="">Badaj</button>
+			</td>
+		</tr>
+	</table>
+
+</body>
+</html>

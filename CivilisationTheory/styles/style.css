@@ -1,0 +1,75 @@
+body {
+	font-family: sans-serif;
+	font-style: normal;
+	font-size: 14px;
+	background: url("../images/body.JPG") repeat scroll 0 0 transparent;
+}
+
+table {
+	font-family: sans-serif;
+	font-style: normal;
+	font-size: 14px;
+	/*background: url("body.JPG") repeat scroll 0 0 transparent;*/
+}
+
+table.materials {
+	position: fixed;
+    top: 5px;
+    left: 20px;
+	font-family: sans-serif;
+	font-style: normal;
+	font-size: 13px;
+}
+
+td.materials {
+	width: 30px;
+}
+
+table.parameters {
+	position: fixed;
+    bottom: 5px;
+    right: 5px;
+	font-family: sans-serif;
+	font-style: normal;
+	font-size: 13px;
+}
+
+td.parameters {
+	width: 5px;
+}
+
+table.buttons {
+	position: fixed;
+    top: 5px;
+    right: 20px;
+ }
+
+ table.objects {
+	position: fixed;
+    top: 80px;
+    left: 20px;
+ }
+
+ td.objects {
+ 	vertical-align: bottom;
+ }
+
+ table.inventions {
+	position: fixed;
+    top: 370px;
+    left: 20px;
+ }
+
+p.obejects_title {
+	position: fixed;
+    top: 40px;
+}
+
+p.inventions_title {
+	position: fixed;
+    top: 330px;
+}
+
+input[type="number"] {
+   width:35px;
+}
