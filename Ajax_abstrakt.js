@@ -26,8 +26,7 @@ PrzygotujDoWyslania = function(obj, prefix) {
 
 
 
-stringdanych = PrzygotujDoWyslania(mojObjektZDanymi);
-
+var stringdanych = "test";
 
 function wyslij(url,stringDanych){
 var zadanie = new XMLHttpRequest();
