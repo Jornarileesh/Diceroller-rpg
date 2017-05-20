@@ -245,7 +245,15 @@ languageData:{
 },
 
 diceData : {
-     imageSources:{
+	imageSources:{
+4:"http://imageshack.com/a/img924/3282/qISZVu.png",
+6:"http://imageshack.com/a/img923/2889/ggtIe5.png",
+8:"http://imageshack.com/a/img924/9493/gHQmV7.png",
+10:"http://imageshack.com/a/img923/5215/bsc2dq.png",
+12:"http://imageshack.com/a/img922/3519/4aBhEo.png",
+20:"http://imageshack.com/a/img922/4097/gcK2iL.png"},
+	
+     AlternativeImageSources:{
 4:"http://imageshack.com/a/img924/3282/qISZVu.png",
 6:"http://imageshack.com/a/img923/2889/ggtIe5.png",
 8:"http://imageshack.com/a/img924/9493/gHQmV7.png",
