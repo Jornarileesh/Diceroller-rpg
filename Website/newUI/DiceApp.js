@@ -2,9 +2,6 @@
 eFind= function(x){return document.getElementById(x);}
 
 window.addEventListener('load', function(e) {
-preferredLanguage = window.navigator.languages
-    ? navigator.languages[0]
-    : (navigator.language || navigator.userLanguage)
 
 
 
@@ -25,30 +22,35 @@ diceApp.createDicesIn(eFind("sramka"))//,diceApp.diceData.default);
 
 
 
-
-
 var diceApp = {
 
 init: function(options){
 	let initLog = "";
 
-    	diceApp.usrLng = !options.language ? 
-		diceApp.languageData.defaultLanguage:
-		options.language;
+    	diceApp.usrLng = window.navigator.languages
+    ? navigator.languages[0]
+    : (navigator.language || navigator.userLanguage)!
+	initLog += "\nUser Language Detected:" + diceApp.usrLng;
 		
 	//Twice because we want to gather info who is visiting us
 	//it can be done better if browser Navigator language recognition would be incorporated into App itself
 	
-	lng = diceApp.languageData.supportedLanguages[diceApp.usrLng] ?
+
+
+
+
+
+	let lng = diceApp.languageData.supportedLanguages[diceApp.usrLng] ?
 		diceApp.usrLng:
-		diceApp.languageData.defaultLanguage;
+		(initLog += "\nUser Language not supported.",
+		diceApp.languageData.defaultLanguage);
 	
 
-
+	
+	diceApp.settings.language = lng;
 	initLog += "\nchosen language:"+lng;
-	
-	diceApp.usrLng = lng;
-	diceApp.labels = diceApp.languageData.labels[lng];
+
+    		diceApp.labels = diceApp.languageData.labels[lng];
 	diceApp.dicePrfx = diceApp.languageData.dicePrfx[lng]
 	
 	//tu dodać opcję customowego ustawiania adresatów requestów
