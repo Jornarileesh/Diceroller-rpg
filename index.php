@@ -107,11 +107,9 @@
 				</td>
 				<td></td>
 			</tr>
-			<div class="g-recaptcha" data-sitekey="6Lc1RCIUAAAAAD_uwxBFRMYTaNaUnw3uW2-2JW0D"></div>
 		</form>
 	</table>
 	
-	</td><td>
 	<table><tr>
 		<td valign='bottom'>
 		<div id="fb-root"></div>
