@@ -5,7 +5,7 @@ window.addEventListener('load', function(e) {
 
 
 
-diceApp.init({language:preferredLanguage});
+diceApp.init();
 diceApp.mergeInCustomData();
 diceApp.createDicesIn(eFind("sramka"))//,diceApp.diceData.default);
 //myScan(eFind("sramka"))
@@ -29,7 +29,7 @@ init: function(options){
 
     	diceApp.usrLng = window.navigator.languages
     ? navigator.languages[0]
-    : (navigator.language || navigator.userLanguage)!
+    : (navigator.language || navigator.userLanguage);
 	initLog += "\nUser Language Detected:" + diceApp.usrLng;
 		
 	//Twice because we want to gather info who is visiting us
@@ -196,7 +196,7 @@ Dice: function (rangeOrSetofValues,nameOfDice){
 
 /*---------------------------------------Properties-and-data-----------------------------------------------------------*/
 
-
+settings:{},
 
 server:{
 	serverAddress:"http://diceroller-rpg.com",
