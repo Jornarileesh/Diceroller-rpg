@@ -47,11 +47,14 @@
         <![endif]-->
         
         
-        <script>
-			function clearField(input) {
-			input.value = "";
-			};
-        </script>
+<script>
+	function clearField(input) {
+	input.value = "";
+	};
+</script>
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
 	</head>
 
 	<body>
@@ -99,9 +102,12 @@
                 <td><textarea name="komentarz" rows="4" cols="35" maxlength="150"></textarea></td>
             </tr>
 			<tr>
-				<td><input type='submit' value='Rzucaj'></td>
+				<td>
+					<input type='submit' value='Rzucaj'>
+				</td>
 				<td></td>
 			</tr>
+			<div class="g-recaptcha" data-sitekey="6Lc1RCIUAAAAAD_uwxBFRMYTaNaUnw3uW2-2JW0D"></div>
 		</form>
 	</table>
 	
