@@ -111,12 +111,17 @@
 	</table>
 
     <section>
-        <div id="sramka"><noscript>
-            <div style="border: 1px solid purple; padding: 10px">
-                <span style="color:red">Unfortunately and unbelievably (in or after 2017) your browser still does not support Javascript or it is not enabled. 
-                <br>Go then and walk a dog and dont forget to come back with newer device. Alternatively, you can use our oldschool version 
-                <a href="/">here</a>
-            </div>
+        <div id="sramka">
+            <div style="border: 1px solid red; padding: 10px;background-color:white;text-align:center;">
+                <span style="color:red;background-color:white;"><h1>NO JAVASCRIPT</h1>
+You need it to see our new nice interface:
+<img src="http://imageshack.com/a/img923/2711/JQsUC6.jpg" width=70%>
+<h6>Unfortunately and unbelievably (in or after 2017) your browser still does not support Javascript or it is not enabled. <br>
+                <br>Go then and walk a dog and dont forget to come back with newer device. <br><br>Alternatively, you can use our oldschool version </h6>
+                <a href="/" style="background-color:lightgray;color:blue;">here</a>
+
+        </noscript>
+
         </div>
     </section>
 
