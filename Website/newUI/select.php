@@ -243,7 +243,7 @@ echo "<b>Komentarz:</b> $koment<br/>"
 <section>
 <div id="sramka">
 
-
+        <noscript>
 
             <div style="border: 1px solid red; padding: 10px;background-color:white;text-align:center;">
                 <span style="color:red;background-color:white;"><h1>NO JAVASCRIPT</h1>
