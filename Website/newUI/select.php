@@ -53,14 +53,15 @@
 			input.value = "";
 			};
         </script>
-
-        <script src="diceApp.js"></script>
-        <script src="settings.js"></script>
-        <script src="script.js"></script>
         
 	</head>
 
 	<body>
+
+		<script src="diceApp.js"></script>
+        <script src="settings.js"></script>
+        <script src="script.js"></script>
+
         <header>            
             <a href="http://www.alea.cba.pl"><h1>Generator rzutu kośćmi</h1></a>
             <p><a href="http://www.alea.cba.pl">Alea.cba.pl</a></p>

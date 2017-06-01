@@ -53,12 +53,12 @@
 			};
         </script>
 
+	</head>
+    <body>
+
         <script src="diceApp.js"></script>
         <script src="settings.js"></script>
         <script src="script.js"></script>
-
-	</head>
-    <body>
        
         <header>            
             <a href="http://www.alea.cba.pl"><h1>Generator rzutu kośćmi</h1></a>
