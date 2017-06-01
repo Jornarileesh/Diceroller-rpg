@@ -110,8 +110,13 @@
 	</td></tr>
 	</table>
 
-    <section>
-        <div id="sramka">
+    </section>
+
+<section>
+<div id="sramka">
+
+        <noscript>
+
             <div style="border: 1px solid red; padding: 10px;background-color:white;text-align:center;">
                 <span style="color:red;background-color:white;"><h1>NO JAVASCRIPT</h1>
 You need it to see our new nice interface:
@@ -122,8 +127,14 @@ You need it to see our new nice interface:
 
         </noscript>
 
-        </div>
-    </section>
+
+
+
+
+
+</div>
+
+</section>
 
     <table><tr>
         <td valign='bottom'>
