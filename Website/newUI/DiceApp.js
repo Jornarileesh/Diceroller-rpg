@@ -202,12 +202,12 @@ languageData:{
 	supportedLanguages:{
 		"en-GB":true,
 		"en-US":true,
-		"pl":true,
+		"pl-PL":true,
 	},
 
 	labels:{
 
-		"pl":[
+		"pl-PL":[
 			"Przycisk",
 			"Rzuty",
 			"Suma rzutów",
@@ -227,7 +227,7 @@ languageData:{
 	},
 	dicePrfx:{
 
-		"pl":"k",
+		"pl-PL":"k",
 
 		"en-GB":"D",
 		
@@ -236,7 +236,7 @@ languageData:{
 
      UIlabels:{
 
-		"pl":{
+		"pl-PL":{
 			rangectrl:"oczka",
 			timesctrl:"Ile Rzutów"
 			},
