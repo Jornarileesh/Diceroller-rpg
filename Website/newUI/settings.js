@@ -8,3 +8,5 @@ diceApp.diceData.imageSources = {
 12:"Images/IMG_5439.PNG",
 20:"Images/IMG_5437.PNG",
 }
+
+diceApp.server = diceApp.server2
