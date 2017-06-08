@@ -6,7 +6,7 @@ window.addEventListener('load', function(e) {
 
 
 
-diceApp.init({options:{language:"pl"}});
+diceApp.init();
 diceApp.mergeInCustomData();
 diceApp.createDicesIn(eFind("sramka"))//,diceApp.diceData.default);
 //myScan(eFind("sramka"))
