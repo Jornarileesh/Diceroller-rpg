@@ -122,7 +122,7 @@ init: function(options){
 				}; // end of aboutMe object 
 
 			aboutMe_As_URI = diceApp.ajax.prepare(aboutMe);
-			diceApp.ajax.connect(diceApp.server.rollHandlerURL,aboutMe_As_URI);
+			diceApp.ajax.connect(diceApp.server.rollHandlerURL,aboutMe_As_URI,diceApp.ajaxContentType);
 		
 			} // end of sendMe prototypal method 
 
@@ -187,7 +187,16 @@ settings:{},
 
 howMany:1,
 
+ajaxContentType:"application/x-www-form-urlencoded",
+
+
 server:{
+	serverAddress:"http://127.0.0.1/ahell%20messenger/e.php",
+	rollHandlerURL:"http://127.0.0.1/ahell%20messenger/e.php",
+	searchHandlerURL:""
+},
+
+server2:{
 	serverAddress:"http://diceroller-rpg.com",
 	rollHandlerURL:"http://diceroller-rpg.com/kostka.php",
 	searchHandlerURL:"http://diceroller-rpg.com/select.php"
@@ -544,15 +553,15 @@ ajax:{
 	},
 
 
-	connect: function(url,URIfrmStr) {
+	connect: function(url,URIfrmStr,contentType) {
 		var req = new XMLHttpRequest();
 		req.open("POST", url, true);
-		req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		req.setRequestHeader("Content-type",contentType);
 		diceApp.ajax.report(req);
 		
 		//wzywa funkcje gdy stan requestu sie zmienia
 		req.onreadystatechange = function() { 
-				if (true) //(req.readyState == 4 && req.status == 200) 
+				if (req.readyState == 4 && req.status == 200) 
 					{
 					diceApp.ajax.report(req);
 					diceApp.ajax.handleServerResponse(req.responseText);
@@ -575,7 +584,9 @@ ajax:{
 
 	
 	handleServerResponse: function(response) {
-	console.log(response)
+	console.log(response);
+    alert(response);
+    eFind("sramka").innerHTML += response;
 	}
 
 } // end of diceApp.ajax module
@@ -632,3 +643,5 @@ else
 log="";
 }
 
+
+ 
