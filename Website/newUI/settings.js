@@ -10,3 +10,5 @@ diceApp.diceData.imageSources = {
 }
 
 diceApp.server = diceApp.server2
+
+diceApp.ajaxContentType = "application/x-www-form-urlencoded";
